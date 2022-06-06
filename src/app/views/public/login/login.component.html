@@ -1,0 +1,35 @@
+<div class="content">
+  <h4>Login</h4>
+  <form
+    class="form"
+    id="login-form"
+    [formGroup]="loginForm"
+    (ngSubmit)="submit()"
+  >
+    <p class="form-group">
+      <input
+        type="text"
+        name="email"
+        placeholder="Email ID"
+        formControlName="email"
+        autocomplete
+        class="form-control"
+      />
+    </p>
+    <p class="form-group">
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        formControlName="password"
+        autocomplete="current-password"
+        class="form-control"
+      />
+    </p>
+    <p class="form-group">
+      <button type="submit" class="btn btn-login">Login</button>
+    </p>
+  </form>
+  <a routerLink="/register" class="link">New Here? Create Acount</a>
+  <p *ngIf="errorMSG" class="text-danger">{{ errorMSG }}</p>
+</div>

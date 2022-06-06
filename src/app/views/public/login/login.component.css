@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #c2d6d6;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-login {
+  border: 1px solid #527a7a;
+  color: #527a7a;
+  transition: 0.5s;
+  margin: 1em;
+}
+.btn-login:hover {
+  background-color: #527a7a;
+  color: #c2d6d6;
+}
+h4 {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  margin: 2em;
+}
+.link {
+  text-decoration: none;
+  color: #527a7a;
+  transition: 0.5s;
+}
+.link:hover {
+  color: black;
+}

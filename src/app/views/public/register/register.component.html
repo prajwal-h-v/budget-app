@@ -1,0 +1,36 @@
+<div class="content">
+  <h4>Register</h4>
+  <form [formGroup]="registerForm" class="register-form" (ngSubmit)="submit()">
+    <p class="form-group">
+      <input
+        type="text"
+        name="email"
+        placeholder="Email ID"
+        formControlName="email"
+        class="form-control"
+      />
+    </p>
+    <p class="form-group">
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        formControlName="password"
+        class="form-control"
+        required
+      />
+    </p>
+    <p class="form-group">
+      <button
+        class="btn btn-register"
+        type="submit"
+        [disabled]="!registerForm.valid"
+        required
+      >
+        Register
+      </button>
+    </p>
+  </form>
+  <a class="link" routerLink="/login">Have account? Login Here</a>
+  <p class="error" *ngIf="error">{{ error }}</p>
+</div>
